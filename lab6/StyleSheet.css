@@ -1,0 +1,32 @@
+﻿#regContainer span{
+ display:block;
+  margin-right: 30px;
+}
+
+.footer {
+  position: fixed;
+  right:0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+}
+.homeContent{
+ 
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.labContainer a:hover{
+  color:blue;
+  transition:.4s;
+  text-decoration: none;
+
+}
+
+.header{
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
