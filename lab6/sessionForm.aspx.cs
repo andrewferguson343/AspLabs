@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 public partial class sessionForm : System.Web.UI.Page
 {
@@ -15,7 +16,7 @@ public partial class sessionForm : System.Web.UI.Page
 
   protected void FirstNameText_TextChanged(object sender, EventArgs e)
   {
-    Session["FirstNameText"] = FirstNameText.Text;
+    Session["FirstNameText"] = "First Name: &nbsp;" + FirstNameText.Text;
   }
 
   protected void LastNameText_TextChanged(object sender, EventArgs e)
@@ -43,5 +44,8 @@ public partial class sessionForm : System.Web.UI.Page
     Session["Gender"] = RadioButtonList1.SelectedValue;
   }
 
-  
+  protected void Button1_Click(object sender, EventArgs e)
+  {
+    Response.Redirect("sessionFormRedirect.aspx");
+  }
 }
